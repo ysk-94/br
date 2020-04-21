@@ -1,11 +1,8 @@
 mod req;
 
-struct Cli {
-    pattern: String,
-    path: std::path::PathBuf,
-}
-
 fn main() {
+    let mode = std::env::args().nth(1);
+
    req::get(); 
 }
 
